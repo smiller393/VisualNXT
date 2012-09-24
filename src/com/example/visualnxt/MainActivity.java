@@ -7,18 +7,23 @@ import java.lang.Object;
 import java.lang.Comparable;
 import android.os.Environment;
 import java.io.File;
+
+
 import android.util.Log;
 import android.view.*;
+import android.content.*;
+import android.provider.MediaStore;
+import android.net.*;
+import android.widget.*;
 
 public class MainActivity extends Activity {
 
+	
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Environment.getExternalStorageDirectory();
-        // create a File object for the parent directory
-        createDirIfNotExists("/VisualNXT");
+        setContentView(R.layout.activity_main);        
     }
 
     @Override
@@ -27,20 +32,15 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public void openCamera(View view) {
-    	
+    public void callCamera(View view){
+    	Intent intent = new Intent(this, CameraActivity.class);
+    	startActivity(intent);	
     }
     
-    public static boolean createDirIfNotExists(String path) {
-        boolean ret = true;
+    
+    
+    
+    
 
-        File file = new File(Environment.getExternalStorageDirectory(), path);
-        if (!file.exists()) {
-            if (!file.mkdirs()) {
-                Log.e("TravellerLog :: ", "Problem creating Image folder");
-                ret = false;
-            }
-        }
-        return ret;
-    }
+    
 }
