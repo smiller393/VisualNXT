@@ -1,23 +1,22 @@
 package com.example.visualnxt;
 
 import java.io.File;
+import java.text.DateFormat;
 
-import android.os.Bundle;
-import android.os.Environment;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
-import android.widget.Toast;
-import android.support.v4.app.NavUtils;
-import java.lang.Object;
-import java.lang.Comparable;
-import android.view.*;
-import android.content.*;
+import android.net.ParseException;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
-import android.net.*;
-import android.widget.*;
-
-
+import android.support.v4.app.NavUtils;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import android.util.*;
 
 public class CameraActivity extends Activity {
 
@@ -61,8 +60,10 @@ public class CameraActivity extends Activity {
     
     public void openCamera() {
     	Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+    	String date = getconvertdate1();
+    	Log.e("a",date);
         // Makes a file for the pic to be saved to in the VisualNXT folder
-    	File image = new File(Environment.getExternalStorageDirectory()+"/VisualNXT", "image_001.jpg");
+    	File image = new File(Environment.getExternalStorageDirectory()+"/VisualNXT", "image_"+ date +".jpg");
         Uri uriSavedImage = Uri.fromFile(image);
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uriSavedImage);
         // Calls the camera into action
@@ -70,6 +71,27 @@ public class CameraActivity extends Activity {
 	
     }
     
+ 
+   
+    public String getconvertdate1()
+    {
+        DateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        inputFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        DateFormat outputFormat = new SimpleDateFormat("ddMMyyyy_HHmmss");
+        Date parsed = new Date();
+        
+        try
+        {
+        	String date = parsed.toString();
+        }
+        catch (ParseException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        String outputText = outputFormat.format(parsed);
+        return outputText;
+    }
 //--------------------------------------------------------------------------------------
 // Can be used to handle the result of the camera call. Commented out right now because 
 // everything is being handled in openCamera()

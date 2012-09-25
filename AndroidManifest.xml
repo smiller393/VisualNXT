@@ -30,6 +30,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="MainActivity" />
         </activity>
+        <activity
+            android:name=".FileDisplay"
+            android:label="@string/title_activity_file_display" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.CS370.VisualNXT.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

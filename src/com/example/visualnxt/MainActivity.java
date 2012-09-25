@@ -37,6 +37,11 @@ public class MainActivity extends Activity {
     	startActivity(intent);	
     }
     
+    public void callFileDisplay(View view){
+    	Intent intent = new Intent(this, FileDisplay.class);
+    	startActivity(intent);	
+    }
+    
     
     
     
