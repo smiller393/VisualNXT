@@ -68,18 +68,5 @@ public class FileDisplay extends Activity {
 
         return MyFiles;
     }
-    
-    private void openFile(String filePath,String fileExtension) {
-        Intent intent = new Intent();
-        intent.setAction(android.content.Intent.ACTION_VIEW);
-        File file = new File(filePath);
-        MimeTypeMap mime = MimeTypeMap.getSingleton();
-        String type = mime.getMimeTypeFromExtension(fileExtension);
-        intent.setDataAndType(Uri.fromFile(file), type);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        try {
-            startActivity(intent);
-        } catch (android.content.ActivityNotFoundException e) {
-        }
-}
+
 }
