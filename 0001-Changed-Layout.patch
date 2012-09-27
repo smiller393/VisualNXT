@@ -1,0 +1,72 @@
+From 7a4bb0ae4be7d3a5a13862a0cfa9b2e5f1279dc8 Mon Sep 17 00:00:00 2001
+From: killswitch23456 <killswitch23456@gmail.com>
+Date: Thu, 27 Sep 2012 11:22:44 -0400
+Subject: [PATCH] Changed Layout
+
+---
+ res/layout/activity_main.xml |   30 +++++++++++++++---------------
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+
+diff --git a/res/layout/activity_main.xml b/res/layout/activity_main.xml
+index 48e7dc5..b74700b 100644
+--- a/res/layout/activity_main.xml
++++ b/res/layout/activity_main.xml
+@@ -13,20 +13,12 @@
+         android:src="@drawable/nxtlogo" />
+ 
+     <Button
+-        android:id="@+id/button4"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_alignRight="@+id/callCamera"
+-        android:layout_below="@+id/imageView1"
+-        android:text="Button" />
+-
+-    <Button
+         android:id="@+id/callFileDisplay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:layout_above="@+id/button4"
+-        android:layout_alignLeft="@+id/button4"
+-        android:layout_alignRight="@+id/callCamera"
++        android:layout_alignBottom="@+id/imageView1"
++        android:layout_alignParentRight="true"
++        android:layout_marginRight="38dp"
+         android:onClick="callFileDisplay"
+         android:text="Files" />
+ 
+@@ -34,19 +26,27 @@
+         android:id="@+id/callCamera"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
++        android:layout_alignBottom="@+id/imageView1"
+         android:layout_centerHorizontal="true"
+-        android:layout_centerVertical="true"
+         android:onClick="callCamera"
+         android:text="@string/camBut" />
+ 
+     <Button
++        android:id="@+id/button4"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_alignLeft="@+id/callCamera"
++        android:layout_below="@+id/imageView1"
++        android:layout_marginTop="28dp"
++        android:text="Button" />
++
++    <Button
+         android:id="@+id/button3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button4"
+-        android:layout_alignRight="@+id/callCamera"
+-        android:layout_below="@+id/callCamera"
+-        android:layout_marginTop="20dp"
++        android:layout_below="@+id/button4"
++        android:layout_marginTop="19dp"
+         android:text="Button" />
+ 
+ </RelativeLayout>
+-- 
+1.7.9.5
+
