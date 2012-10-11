@@ -17,6 +17,8 @@ import android.provider.MediaStore;
 import android.net.*;
 import android.widget.*;
 import java.util.*;
+import android.webkit.MimeTypeMap;
+import android.widget.AdapterView.*;
 
 
 public class FileDisplay extends Activity {
@@ -29,9 +31,36 @@ public class FileDisplay extends Activity {
         ListView lv;
         ArrayList<String> FilesInFolder = GetFiles("/sdcard/VisualNXT");
         lv = (ListView)findViewById(R.id.FileList);
-
+        
+        //Creates the adapter that will fill the list
         lv.setAdapter(new ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_1, FilesInFolder));
+        
+     // listening to single list item on click
+        lv.setOnItemClickListener(new OnItemClickListener() {
+          public void onItemClick(AdapterView<?> parent, View view,
+              int position, long id) {
+ 
+              // selected item
+              String fileName = ((TextView) view).getText().toString();
+              
+              Context context = getApplicationContext();
+              CharSequence text = fileName;
+              int duration = Toast.LENGTH_SHORT;
+
+              Toast toast = Toast.makeText(context, text, duration);
+              toast.show();
+              
+              //Opens the file selected
+              openFile(fileName,"jpg");
+ 
+          }
+        });
+        	
+
+        //String listChoice = (lv.getItemAtPosition(selectedInt));
+        
+        
         //getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -69,4 +98,21 @@ public class FileDisplay extends Activity {
         return MyFiles;
     }
 
+    private void openFile(String fileName,String fileExtension) {
+        Intent intent = new Intent();
+        intent.setAction(android.content.Intent.ACTION_VIEW);
+        String filePath = Environment.getExternalStorageDirectory()+"/VisualNXT/";
+        File file = new File(filePath+fileName);
+        MimeTypeMap mime = MimeTypeMap.getSingleton();
+        String type = mime.getMimeTypeFromExtension(fileExtension);
+        intent.setDataAndType(Uri.fromFile(file), type);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        try {
+            startActivity(intent);
+        } 
+        catch (android.content.ActivityNotFoundException e) {
+        }
 }
+
+}
+
