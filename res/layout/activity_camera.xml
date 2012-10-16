@@ -1,14 +1,78 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uul_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    
+    android:background="@drawable/nxtbackground"
+>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".CameraActivity" />
+<TextView
+    android:id="@+id/heading_tv"
+    android:layout_marginTop="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/uul_name"
+    android:textSize="12pt"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#ff9f00"
+    android:layout_gravity="center_horizontal"
+/>
 
-</RelativeLayout>
+<Button 
+    android:id="@+id/nxt_button" 
+    android:layout_marginTop="20dp"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="12pt"    
+    android:text="@string/uul_select_nxt" 
+/>
+
+<TextView
+    android:id="@+id/nxt_name"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:background="#60000000"
+    android:textSize="8pt"    
+    android:textColor="#ff9f00"
+    android:minLines="1"
+    android:gravity="center_horizontal"
+/>
+
+<Button 
+    android:id="@+id/file_button"
+    android:layout_marginTop="20dp"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="12pt"    
+    android:text="@string/uul_select_file"
+/>
+
+<TextView
+    android:id="@+id/uul_file_name"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#60000000"
+    android:textSize="8pt"    
+    android:textColor="#ff9f00"
+    android:minLines="1"
+    android:gravity="center_horizontal"
+/>
+
+<Button
+    android:id="@+id/upload_button"
+    android:layout_marginTop="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/uul_action"
+    android:textSize="12pt"
+    android:layout_gravity="center_horizontal"
+/>
+
+</LinearLayout>
+

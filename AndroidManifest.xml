@@ -37,6 +37,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.CS370.VisualNXT.MainActivity" />
         </activity>
+        
+        <activity android:name=".UniversalUploader" android:label="@string/uul_name"
+			android:screenOrientation="portrait">
+		</activity>
+		
+        <activity android:name=".DeviceListActivity"
+			android:screenOrientation="portrait" android:label="@string/select_device"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
     </application>
+    
+    	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>

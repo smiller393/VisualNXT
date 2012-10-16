@@ -39,7 +39,12 @@ public class MainActivity extends Activity {
     
     public void callFileDisplay(View view){
     	Intent intent = new Intent(this, FileDisplay.class);
-    	startActivity(intent);	
+    	startActivity(intent);
+    }
+    	
+    public void callUpload(View view){
+        Intent intent = new Intent(this, UniversalUploader.class);
+        startActivity(intent);	
     }
     
     

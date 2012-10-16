@@ -3,9 +3,63 @@
     <string name="app_name">VisualNXT</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_camera">CameraActivity</string>
-    <string name="title_activity_file_display">FileDisplay</string>
+    <string name="title_activity_main">Visual NXT</string>
+    <string name="title_activity_camera">Compile &amp; Send</string>
+    <string name="title_activity_file_display">Recent Images</string>
     <string name="camBut">Camera</string>
 
+    
+    <!-- Universal Uploader -->
+    <string name="uul_name">Universal Uploader</string>
+    <string name="uul_select_nxt">1 - Select NXT robot</string>
+    <string name="uul_select_file">2 - Select file</string>
+    <string name="uul_action">3 - Upload</string>
+    <string name="uul_file_dialog_title">Select a file.</string>
+    <string name="uul_nxt_dialog_title">Select your NXT robot.</string>
+    <string name="uul_please_select_nxt">Please, select your NXT robot first!</string>
+    <string name="uul_please_select_file">Please, select a file first!</string>
+    <string name="uul_connecting">Connecting, please wait...</string>
+    <string name="uul_uploading">Uploading, please wait...</string>
+    <string name="uul_bluetooth_open_error">Unable to open BlueTooth connection!</string>
+    <string name="uul_bluetooth_close_error">Error while closing BlueTooth connection!</string>
+    <string name="uul_file_open_error">Error while opening the file!</string>
+    <string name="uul_uploading_error">Error while uploading the file!</string>
+    <string name="uul_other_error">Aww, an unknown error occured.</string>
+    <string name="uul_no_files">No files to be found.</string>
+    <string name="uul_no_paired_NXT">No paired NXT robot found or BlueTooth is switched off.</string>
+    <string name="uul_bluetooth_pairing">After pairing, please press <b>Upload</b> button again.</string>
+    
+    <!-- bluetooth messages -->
+    <string name="connecting_please_wait">Connecting to your NXT robot.\nPlease wait...</string>
+    <string name="no_paired_nxt">No paired NXT robot found!</string>
+    <string name="problem_at_connecting">Problem in creating a connection!</string>
+    <string name="problem_at_closing">Problem in closing the connection!</string>
+    <string name="problem_at_sending">Problem in sending a message!</string>
+    <string name="problem_at_receiving">Problem in receiving a message!</string>  
+
+    <string name="current_position">Current position: </string>
+    <string name="lama_title">LEGO Application MINDdroid Agreement</string>
+    <string name="lama_accept">I want to play!</string>
+    <string name="lama_refuse">No, thanks.</string>
+
+    <string name="bt_error_dialog_title">BlueTooth Error</string>    
+
+    <string name="bt_error_dialog_message">
+        Oh, no! It seems that your NXT robot is not switched on. Please make sure that
+        your NXT robot is on and has BlueTooth switched on and then try again to connect.
+    </string>    
+    <string name="bt_needs_to_be_enabled">You need to enable BlueTooth first!"</string>
+    
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning area for NXT robots...</string>
+    <string name="select_device">Please, select your NXT robot.</string>
+    <string name="none_paired">No NXT robots have been paired.</string>
+    <string name="none_found">No NXT robots to be found.</string>
+    <string name="title_paired_devices">Paired NXT robots</string>
+    <string name="title_other_devices">Other available NXT robots</string>
+    <string name="button_scan">Scan for the new NXT robot</string>
+    <string name="pairing_message">After pairing, press <b>Menu</b> and connect.</string>
+    <string name="wait_till_bt_on">Turning BlueTooth on to connect to your NXT robot.</string>
+    <string name="bt_off_message">BlueTooth is turned off. See you later!</string>
 </resources>

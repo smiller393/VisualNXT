@@ -41,19 +41,16 @@ class UploaderFileDialog {
 
     private final static String DIR_PATH = "/sdcard/download/";
     private final static String[] NXTG_EXTENSIONS = 
-        { ".rcd", ".rso", ".ric", ".rxe" };
+        { ".rcd", ".rso", ".ric", ".rxe", ".nxj" };
 
     private Activity mActivity;
     private DialogListener mDialogListener;
     private String[] programs;
     private int preinstalledFiles;
-    private int mRobotType;
     
-    public UploaderFileDialog(Activity activity, DialogListener dialogListener,
-        int currentRobotType) {    
+    public UploaderFileDialog(Activity activity, DialogListener dialogListener) {    
         mActivity = activity;
         mDialogListener = dialogListener;
-        mRobotType = currentRobotType;
     }  
 
     /**
@@ -82,19 +79,12 @@ class UploaderFileDialog {
         // internal files
         preinstalledFiles = preinstalledList.length;
         for (int index = 0; index < preinstalledFiles; index++) {
-            if (mRobotType == R.id.robot_type_lejos) {
-                if (matchNXTGExtension(preinstalledList[index]))
-                    continue;
-            }    
-            else {
-                if (matchNXTGExtension(preinstalledList[index]) == false)
-                    continue;
-            }                
+                          
             fileList.add(preinstalledList[index]);
         }
         preinstalledFiles = fileList.size();
 
-        // external files
+        /*/ external files
         File file = new File(DIR_PATH);
         if (file != null) {
             File[] files = file.listFiles();
@@ -103,18 +93,11 @@ class UploaderFileDialog {
                     if (files[fileNr].isDirectory())
                         continue;
                     String fileName = files[fileNr].getName();
-                    if (mRobotType == R.id.robot_type_lejos) {
-                        if (matchNXTGExtension(fileName))
-                            continue;
-                    }    
-                    else {
-                        if (matchNXTGExtension(fileName) == false)
-                            continue;
-                    }                
+                                  
                     fileList.add(fileName);
                 }
             }
-        }
+        }*/
         programs = new String[fileList.size()];
         programs = fileList.toArray(programs);
         return programs.length;

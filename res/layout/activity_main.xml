@@ -16,35 +16,40 @@
         android:id="@+id/callCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/imageView1"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
         android:onClick="callCamera"
         android:text="@string/camBut" />
-
+
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/callFileDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/callCamera"
-        android:text="Button" />
+        android:layout_alignLeft="@+id/callCamera"
+        android:layout_alignRight="@+id/callCamera"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="29dp"
+        android:onClick="callFileDisplay"
+        android:text="Files" />
+
+    <Button
+        android:id="@+id/callUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/callFileDisplay"
+        android:layout_alignRight="@+id/callFileDisplay"
+        android:layout_below="@+id/callFileDisplay"
+        android:layout_marginTop="40dp"
+        android:onClick="callUpload"
+        android:text="Upload" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button4"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/callUpload"
+        android:layout_below="@+id/callUpload"
+        android:layout_marginTop="44dp"
         android:text="Button" />
-
-    <Button
-        android:id="@+id/callFileDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignParentRight="true"
-        android:onClick="callFileDisplay"
-        android:text="Files" />
 
 </RelativeLayout>
