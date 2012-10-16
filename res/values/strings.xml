@@ -13,6 +13,7 @@
     <string name="uul_name">Universal Uploader</string>
     <string name="uul_select_nxt">1 - Select NXT robot</string>
     <string name="uul_select_file">2 - Select file</string>
+    <string name="uul_play">4 - Play File</string>
     <string name="uul_action">3 - Upload</string>
     <string name="uul_file_dialog_title">Select a file.</string>
     <string name="uul_nxt_dialog_title">Select your NXT robot.</string>

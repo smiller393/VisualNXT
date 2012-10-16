@@ -17,26 +17,28 @@ public final class R {
         public static final int nxtlogo=0x7f020003;
     }
     public static final class id {
-        public static final int FileList=0x7f070007;
-        public static final int button3=0x7f07000d;
-        public static final int button_scan=0x7f070012;
-        public static final int callCamera=0x7f07000a;
-        public static final int callFileDisplay=0x7f07000b;
-        public static final int callUpload=0x7f07000c;
+        public static final int Button01=0x7f070008;
+        public static final int FileList=0x7f070009;
+        public static final int button3=0x7f07000f;
+        public static final int button_scan=0x7f070014;
+        public static final int callCamera=0x7f07000c;
+        public static final int callFileDisplay=0x7f07000d;
+        public static final int callUpload=0x7f07000e;
         public static final int file_button=0x7f070004;
         public static final int heading_tv=0x7f070001;
-        public static final int imageView1=0x7f070009;
-        public static final int menu_settings=0x7f070013;
-        public static final int new_devices=0x7f070011;
+        public static final int imageView1=0x7f07000b;
+        public static final int menu_settings=0x7f070015;
+        public static final int new_devices=0x7f070013;
         public static final int nxt_button=0x7f070002;
         public static final int nxt_name=0x7f070003;
-        public static final int paired_devices=0x7f07000f;
-        public static final int textView1=0x7f070008;
-        public static final int title_new_devices=0x7f070010;
-        public static final int title_paired_devices=0x7f07000e;
+        public static final int paired_devices=0x7f070011;
+        public static final int textView1=0x7f07000a;
+        public static final int title_new_devices=0x7f070012;
+        public static final int title_paired_devices=0x7f070010;
         public static final int upload_button=0x7f070006;
         public static final int uul_file_name=0x7f070005;
         public static final int uul_layout=0x7f070000;
+        public static final int uul_status=0x7f070007;
     }
     public static final class layout {
         public static final int activity_camera=0x7f030000;
@@ -52,59 +54,60 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int bt_error_dialog_message=0x7f040024;
-        public static final int bt_error_dialog_title=0x7f040023;
-        public static final int bt_needs_to_be_enabled=0x7f040025;
-        public static final int bt_off_message=0x7f04002f;
-        public static final int button_scan=0x7f04002c;
+        public static final int bt_error_dialog_message=0x7f040025;
+        public static final int bt_error_dialog_title=0x7f040024;
+        public static final int bt_needs_to_be_enabled=0x7f040026;
+        public static final int bt_off_message=0x7f040030;
+        public static final int button_scan=0x7f04002d;
         public static final int camBut=0x7f040006;
         /**  bluetooth messages 
          */
-        public static final int connecting_please_wait=0x7f040019;
-        public static final int current_position=0x7f04001f;
+        public static final int connecting_please_wait=0x7f04001a;
+        public static final int current_position=0x7f040020;
         public static final int hello_world=0x7f040001;
-        public static final int lama_accept=0x7f040021;
-        public static final int lama_refuse=0x7f040022;
-        public static final int lama_title=0x7f040020;
+        public static final int lama_accept=0x7f040022;
+        public static final int lama_refuse=0x7f040023;
+        public static final int lama_title=0x7f040021;
         public static final int menu_settings=0x7f040002;
-        public static final int no_paired_nxt=0x7f04001a;
-        public static final int none_found=0x7f040029;
-        public static final int none_paired=0x7f040028;
-        public static final int pairing_message=0x7f04002d;
-        public static final int problem_at_closing=0x7f04001c;
-        public static final int problem_at_connecting=0x7f04001b;
-        public static final int problem_at_receiving=0x7f04001e;
-        public static final int problem_at_sending=0x7f04001d;
+        public static final int no_paired_nxt=0x7f04001b;
+        public static final int none_found=0x7f04002a;
+        public static final int none_paired=0x7f040029;
+        public static final int pairing_message=0x7f04002e;
+        public static final int problem_at_closing=0x7f04001d;
+        public static final int problem_at_connecting=0x7f04001c;
+        public static final int problem_at_receiving=0x7f04001f;
+        public static final int problem_at_sending=0x7f04001e;
         /**   DeviceListActivity 
          */
-        public static final int scanning=0x7f040026;
-        public static final int select_device=0x7f040027;
+        public static final int scanning=0x7f040027;
+        public static final int select_device=0x7f040028;
         public static final int title_activity_camera=0x7f040004;
         public static final int title_activity_file_display=0x7f040005;
         public static final int title_activity_main=0x7f040003;
-        public static final int title_other_devices=0x7f04002b;
-        public static final int title_paired_devices=0x7f04002a;
-        public static final int uul_action=0x7f04000a;
-        public static final int uul_bluetooth_close_error=0x7f040012;
-        public static final int uul_bluetooth_open_error=0x7f040011;
-        public static final int uul_bluetooth_pairing=0x7f040018;
-        public static final int uul_connecting=0x7f04000f;
-        public static final int uul_file_dialog_title=0x7f04000b;
-        public static final int uul_file_open_error=0x7f040013;
+        public static final int title_other_devices=0x7f04002c;
+        public static final int title_paired_devices=0x7f04002b;
+        public static final int uul_action=0x7f04000b;
+        public static final int uul_bluetooth_close_error=0x7f040013;
+        public static final int uul_bluetooth_open_error=0x7f040012;
+        public static final int uul_bluetooth_pairing=0x7f040019;
+        public static final int uul_connecting=0x7f040010;
+        public static final int uul_file_dialog_title=0x7f04000c;
+        public static final int uul_file_open_error=0x7f040014;
         /**  Universal Uploader 
          */
         public static final int uul_name=0x7f040007;
-        public static final int uul_no_files=0x7f040016;
-        public static final int uul_no_paired_NXT=0x7f040017;
-        public static final int uul_nxt_dialog_title=0x7f04000c;
-        public static final int uul_other_error=0x7f040015;
-        public static final int uul_please_select_file=0x7f04000e;
-        public static final int uul_please_select_nxt=0x7f04000d;
+        public static final int uul_no_files=0x7f040017;
+        public static final int uul_no_paired_NXT=0x7f040018;
+        public static final int uul_nxt_dialog_title=0x7f04000d;
+        public static final int uul_other_error=0x7f040016;
+        public static final int uul_play=0x7f04000a;
+        public static final int uul_please_select_file=0x7f04000f;
+        public static final int uul_please_select_nxt=0x7f04000e;
         public static final int uul_select_file=0x7f040009;
         public static final int uul_select_nxt=0x7f040008;
-        public static final int uul_uploading=0x7f040010;
-        public static final int uul_uploading_error=0x7f040014;
-        public static final int wait_till_bt_on=0x7f04002e;
+        public static final int uul_uploading=0x7f040011;
+        public static final int uul_uploading_error=0x7f040015;
+        public static final int wait_till_bt_on=0x7f04002f;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;

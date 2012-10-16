@@ -73,6 +73,26 @@
     android:textSize="12pt"
     android:layout_gravity="center_horizontal"
 />
+
+<TextView
+    android:id="@+id/uul_status"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="#60000000"
+    android:gravity="center_horizontal"
+    android:minLines="1"
+    android:textColor="#ff9f00"
+    android:textSize="8pt" />
+
+<Button
+    android:id="@+id/Button01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="@string/uul_play"
+    android:textSize="12pt" />
 
 </LinearLayout>
 
