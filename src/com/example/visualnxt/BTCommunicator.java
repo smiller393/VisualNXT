@@ -37,7 +37,7 @@ import java.util.UUID;
  * This class is for talking to a LEGO NXT robot via bluetooth.
  * The communciation to the robot is done via LCP (LEGO communication protocol).
  * Objects of this class can either be run as standalone thread or controlled
- * by the owners, i.e. calling the send/recive methods by themselves.
+ * by the owners, i.e. calling the send/recive methods by themselves. TESTING
  */
 public class BTCommunicator extends Thread {
     public static final int MOTOR_A = 0;
